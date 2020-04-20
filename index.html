@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157771985-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-157771985-1');
-    </script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | ProjectTurboTunnel</title>
@@ -18,7 +9,7 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/web version.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/turbo tunnel web.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -26,17 +17,7 @@
       <div id="gameContainer" style="width: 1280px; height: 720px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-
-       <div class="fullscreen" id="fscreenBtn" onclick="gameInstance.SetFullscreen(1)"></div>
-
-       <script>
-       
-       var fscreen = document.getElementById("fscreenBtn");
-
-        if(screen.width / screen.height != 16/9)
-          fscreen.style.visibility = "hidden";
-       
-       </script>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">ProjectTurboTunnel</div>
       </div>
     </div>
