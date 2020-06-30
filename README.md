@@ -1,4 +1,4 @@
 # TurboTunnelTrials
 Battletoads fan game made in Unity.
 
-https://dcaouette.github.io/TurboTunnelTrials/index.html
+To play: https://dcaouette.github.io/TurboTunnelTrials/index.html
